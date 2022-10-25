@@ -4,6 +4,10 @@ import { AuthContext } from './contexts/AuthProvider';
 import { useContext } from 'react';
 import PokemonCard from "./views/PokemonCard";
 import Accessories from "./views/Accessories";
+import BoosterPacks from "./views/BoosterPacks";
+import { EliteTB } from "./components/EliteTB";
+import Oversized from "./views/Oversized";
+import Cart from "./components/Cart";
 
 function App() {
     const { login, logout, user } = useContext(AuthContext)
@@ -35,8 +39,17 @@ function App() {
                         <Link className="nav-link" to="/ptcg">
                             Single Cards
                         </Link>
+                        <Link className="nav-link" to="/boosterpacks">
+                            Booster Packs and Boxes
+                        </Link>
                         <Link className="nav-link" to="/accessories">
                             Accessories
+                        </Link>
+                        <Link className="nav-link" to="/elitetb">
+                            Elite Trainer Box
+                        </Link>
+                        <Link className="nav-link" to="/oversized">
+                            Oversized Cards
                         </Link>
 
                     </div>
@@ -64,7 +77,12 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/ptcg" element={<PokemonCard />} />
-                    <Route path="/ptcg" element={<Accessories />} />
+                    <Route path="/boosterpacks" element={<BoosterPacks />} />
+                    <Route path="/accessories" element={<Accessories />} />
+                    <Route path="/elitetb" element={<EliteTB />} />
+                    <Route path="/oversized" element={<Oversized />} />
+                    <Route path="/cart" element={<Cart />} />
+
                 </Routes>
             </div>
         </BrowserRouter>

@@ -1,7 +1,6 @@
 const Cart = () => {
     return (
         <div>
-            <Navbar />
             <p>
                 your cart is empty
             </p>
