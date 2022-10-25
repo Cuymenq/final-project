@@ -4,7 +4,9 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row'
-
+import { Link } from 'react-router-dom';
+import SingleCard from '../components/SingleCard';
+import './PokemonCard.css'
 
 export default function PokemonCardList() {
     const [pokemonCard, setPokemonCard] = useState({})
@@ -52,7 +54,7 @@ export default function PokemonCardList() {
                                                 <h4>From {card.set.name}</h4>
                                                 <p>{card.flavorText}</p>
                                             </Card.Text>
-                                            <Button variant="primary">Check it out</Button>
+                                            <Button variant="primary"><Link to={SingleCard}>Check it out</Link></Button>
                                         </Card.Body>
                                     </Card>
 

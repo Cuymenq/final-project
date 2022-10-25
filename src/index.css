@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-image: url("./assets/11290309.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  display: block;
+}

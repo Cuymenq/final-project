@@ -8,18 +8,18 @@ export default function Home() {
     const { login, logout } = useContext(AuthContext)
 
     return (
-        <div className='container mx-2'>
+        <div className='container text-center mx-2'>
 
             {
                 (user.loggedIn) ?
                     (
                         <>
-                            <h2>Welcome, {user.username}</h2>
+                            <h2 className='text-light'>Welcome, {user.username}</h2>
                             <Banner />
                         </>
                     )
                     :
-                    <div className='container text-center my-2'>
+                    <div className='container my-2 text-light'>
                         <h1>Welcome to my Project</h1>
                         <h2>Please login to continue</h2>
                         <div className='my-3'>

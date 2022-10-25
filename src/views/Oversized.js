@@ -7,11 +7,12 @@ import oversized3 from '../assets/oversized3.jpg'
 import oversized4 from '../assets/oversized4.jpg'
 import oversized5 from '../assets/oversized5.jpg'
 import oversized6 from '../assets/oversized6.jpg'
+import oversize from '../assets/oversize.png'
 
 const Overized = () => {
   return (
     <div className='container text-center'>
-      <h1 className='mb-5'>Oversized Card Sets</h1>
+      <img src={oversize} />
       <div>
         <CardGroup className='container m-3'>
           <Card className='border-0'>
